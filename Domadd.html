@@ -1,0 +1,32 @@
+
+  <table>
+    <tr>
+      <td>num1</td>
+      <td><input type="number" id="num1" /></td>
+    </tr>
+    <tr>
+      <td>num2</td>
+      <td><input type="number" id="num2" /></td>
+    </tr>
+    <tr>
+      <td>Sum</td>
+      <td id="sumResult"></td>
+    </tr>
+  </table>
+  <br />
+  <button onclick="calculateSum()">Calculate Sum</button>
+
+  <script>
+    // Function to calculate the sum
+    function calculateSum() {
+      var num1 =parseFloat( document.getElementById('num1').value)||0;
+      var num2 = parseFloat(document.getElementById('num2').value)||0;
+      var sum = num1 + num2;
+
+      // Display result in the third row
+      document.getElementById('sumResult').textContent= sum;
+    }
+
+  </script>
+</body>
+</html>
