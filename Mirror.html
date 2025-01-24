@@ -1,0 +1,13 @@
+<input id="input" >
+<button id="button">Click me</button>
+<p id="output"></p>
+
+<script>
+    var input = document.getElementById('input');
+    var button = document.getElementById('button');
+    var output = document.getElementById('output');
+
+    input.addEventListener("keydown", function() {
+        output.textContent = input.value;
+    });
+    </script>

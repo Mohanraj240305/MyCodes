@@ -1,0 +1,10 @@
+<button class="change" onclick="change(event)">Change Color by Click</button>
+<button class="change" onmouseover="change(event)">Change Color by Mouseover </button>
+<button class="change" onkeypress="change(event)">Change Color by OnKeyPress </button>
+<button class="change" ondblclick="change(event)">Change Color by OnDblClick </button>
+<script>
+    // var button = document.querySelectorAll(".change");
+    function change(event){
+        event.target.style.backgroundColor = 'red';
+    }
+</script>
